@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="flex flex-col h-screen w-screen justify-center items-center">
+    <div class="h-[500px] w-[400px] flex flex-col">
+      <div
+        class="h-[180px] w-full bg-[#6943FF] border-black mt-0 flex flex-col justify-center items-center"
+      >
+        <p class="text-white font-bold text-xl mb-3">
+          Metric/Imperial Unit Conversion
+        </p>
+        <input
+          type="text"
+          id="number-input"
+          class="bg-[#6943FF] border border-[#B295FF] text-white font-extrabold text-4xl rounded-md focus:ring-purple-400 focus:border-purple-400 w-24 p-1 mb-3 text-center"
+        />
+
+        <button type="button" id="convert-button" class="text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+
+          Convert
+        </button>
+      </div>
+      <div
+        class="h-[320px] w-full flex flex-col justify-center items-center bg-gray-100 space-y-6"
+      >
+        <div class="h-[80px] w-[90%] bg-white flex flex-col justify-center items-center">
+          <p class="text-[#5A537B] mb-2">Length (Meter/Feet)</p>
+          <p id="length-result" class="text-[#353535] text-xs"></p>
+        </div>
+        <div class="h-[80px] w-[90%] bg-white flex flex-col justify-center items-center">
+          <p class="text-[#5A537B] mb-2">Volume (Liters/Gallons)</p>
+          <p id="volume-result" class="text-[#353535] text-xs"></p>
+        </div>
+        <div class="h-[80px] w-[90%] bg-white flex flex-col justify-center items-center">
+          <p class="text-[#5A537B] mb-2">Mass (Kilograms/Pounds)</p>
+          <p id="mass-result" class="text-[#353535] text-xs"></p>
+        </div>
+      </div>
+    </div>
+    <script src="/src/index.js"></script>
+  </body>
+</html>
